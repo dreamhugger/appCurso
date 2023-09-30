@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tb_cursos', function (Blueprint $table) {
+        Schema::create('cursos', function (Blueprint $table) {
             $table->id();
             $table->string('nome_curso');
             $table->string('carga_horaria');
             $table->unsignedBigInteger('id_categoria');
-            $table->decimal('valor', 6.2);
+            $table->decimal('valor', 6,2);
             $table->timestamps();
             $table->foreign('id_categoria')->references('id')->on('categorias');
         });
