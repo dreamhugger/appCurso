@@ -1,0 +1,2 @@
+@include('padrao')
+@sction('conteudo')
