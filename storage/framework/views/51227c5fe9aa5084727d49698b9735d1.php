@@ -27,7 +27,7 @@
   <!-- ======== sidebar-nav start =========== -->
   <aside class="sidebar-nav-wrapper">
     <div class="navbar-logo">
-      <a href="{{route('index')}}">
+      <a href="<?php echo e(route('index')); ?>">
         <img src="assets/images/logo/logo.svg" alt="logo" />
       </a>
     </div>
@@ -48,7 +48,7 @@
           </a>
           <ul id="ddmenu_1" class="collapse show dropdown-nav">
             <li>
-              <a href="{{route('index')}}" class="active"> <span class="text h4"> eCommerce</span> </a>
+              <a href="<?php echo e(route('index')); ?>" class="active"> <span class="text h4"> eCommerce</span> </a>
             </li>
           </ul>
         </li>
@@ -67,7 +67,7 @@
           </a>
           <ul id="ddmenu_2" class="collapse dropdown-nav">
             <li>
-              <a href="{{route('form-cadastro-categoria')}}"> <span class="text h4">Cadastrar </span></a>
+              <a href="<?php echo e(route('form-cadastro-categoria')); ?>"> <span class="text h4">Cadastrar </span></a>
             </li>
             <li>
               <a href="blank-page.html"> <span class="text h4">Gerenciar </span></a>
@@ -90,7 +90,7 @@
           </a>
           <ul id="ddmenu_Curso" class="collapse dropdown-nav">
             <li>
-              <a href="{{route('form-cadastro-curso')}}"> <span class="text h4">Cadastrar </span> </a>
+              <a href="<?php echo e(route('form-cadastro-curso')); ?>"> <span class="text h4">Cadastrar </span> </a>
             </li>
             <li>
               <a href="blank-page.html"> <span class="text h4">Gerenciar</span> </a>
@@ -113,7 +113,7 @@
           </a>
           <ul id="ddmenu_Aula" class="collapse dropdown-nav">
             <li>
-              <a href="{{route('form-cadastro-aula')}}"> <span class="text h4">Cadastrar</span> </a>
+              <a href="<?php echo e(route('form-cadastro-aula')); ?>"> <span class="text h4">Cadastrar</span> </a>
             </li>
             <li>
               <a href="blank-page.html"><span class="text h4"> Gerenciar</span> </a>
@@ -316,7 +316,7 @@
 
 
   
-    @yield('content')
+    <?php echo $__env->yieldContent('content'); ?>
 
     <!-- ========== footer start =========== -->
     <footer class="footer">
@@ -355,4 +355,4 @@
     <script src="assets/js/jvectormap.min.js"></script>
     <script src="assets/js/world-merc.js"></script>
     <script src="assets/js/polyfill.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script><?php /**PATH C:\Users\Alunos\Desktop\app\appCurso\resources\views/padrao.blade.php ENDPATH**/ ?>

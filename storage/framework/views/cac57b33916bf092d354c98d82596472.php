@@ -1,5 +1,4 @@
-@extends('padrao')
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 <section>
   <div class="container-fluid">
@@ -18,8 +17,8 @@
               <div class="invoice-card card-style mb-30">
                 <div class="card-style mb-30 ">
                   <h6 class="mb-25 fs-4" >Digite o nome do curso</h6>
-                  <form action="{{route('cadastro-curso')}}" method="post">
-                    @csrf
+                  <form action="<?php echo e(route('cadastro-curso')); ?>" method="post">
+                    <?php echo csrf_field(); ?>
                     <div class="input-style-1 fs-4 ">
                         <label class="fs-4">Nome do curso</label>
                         <input name='nomecurso' type="text" />
@@ -54,4 +53,5 @@
   </div>
   <!-- end container -->
 </section>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('padrao', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\Alunos\Desktop\app\appCurso\resources\views/cad_curso.blade.php ENDPATH**/ ?>

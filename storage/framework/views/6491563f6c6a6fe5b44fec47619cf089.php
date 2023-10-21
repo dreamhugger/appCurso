@@ -1,5 +1,5 @@
-@include('padrao')
-@section('conteudo')
+<?php echo $__env->make('padrao', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php $__env->startSection('conteudo'); ?>
       <!-- ========== section start ========== -->
       <section class="section">
         <div class="container-fluid">
@@ -1286,3 +1286,4 @@
     </script>
   </body>
 </html>
+<?php /**PATH C:\Users\Alunos\Desktop\app\appCurso\resources\views/index.blade.php ENDPATH**/ ?>
